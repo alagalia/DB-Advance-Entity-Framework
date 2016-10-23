@@ -1,0 +1,6 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\bin\Debug\MiniORM.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\obj\Debug\MiniORM.csprojResolveAssemblyReference.cache
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\bin\Debug\MiniORM.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\bin\Debug\MiniORM.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\obj\Debug\MiniORM.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\MiniORM\MiniORM\obj\Debug\MiniORM.pdb
