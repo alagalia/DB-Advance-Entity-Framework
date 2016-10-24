@@ -276,13 +276,19 @@
 
         public void DeleteById<T>(int id)
         {
-            string query = $"DELETE FROM {this.GetTableName(typeof(T))} WHERE Id = {id}";
+            string query = $"DELETE FROM {this.GetTableName(typeof(T))} WHERE Id = @id";
 
             using (connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
-               command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@id", id);
+                int afectedRows = command.ExecuteNonQuery();
+
+                if (afectedRows == 0)
+                {
+                    throw new ArgumentException($"Id not found!");
+                }
             }
         }
 
