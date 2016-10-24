@@ -1,0 +1,6 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\bin\Debug\01.Initial_Setup.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\bin\Debug\01.Initial_Setup.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\bin\Debug\01.Initial_Setup.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\obj\Debug\01.Initial_Setup.csprojResolveAssemblyReference.cache
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\obj\Debug\01.Initial_Setup.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\01.Initial_Setup\obj\Debug\01.Initial_Setup.pdb

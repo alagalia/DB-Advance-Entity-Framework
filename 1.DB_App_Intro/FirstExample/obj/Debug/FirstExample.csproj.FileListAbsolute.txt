@@ -4,3 +4,6 @@ D:\SOFTUNI-C#\DB Advance Entity Framework\DB_App_Intro\FirstExample\bin\Debug\Fi
 D:\SOFTUNI-C#\DB Advance Entity Framework\DB_App_Intro\FirstExample\bin\Debug\FirstExample.pdb
 D:\SOFTUNI-C#\DB Advance Entity Framework\DB_App_Intro\FirstExample\obj\Debug\FirstExample.exe
 D:\SOFTUNI-C#\DB Advance Entity Framework\DB_App_Intro\FirstExample\obj\Debug\FirstExample.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\1.DB_App_Intro\FirstExample\bin\Debug\FirstExample.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\1.DB_App_Intro\FirstExample\obj\Debug\FirstExample.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\1.DB_App_Intro\FirstExample\obj\Debug\FirstExample.pdb

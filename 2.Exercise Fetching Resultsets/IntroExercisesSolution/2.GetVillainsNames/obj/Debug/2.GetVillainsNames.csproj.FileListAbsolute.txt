@@ -1,0 +1,5 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\2.GetVillainsNames\bin\Debug\2.GetVillainsNames.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\2.GetVillainsNames\bin\Debug\2.GetVillainsNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\2.GetVillainsNames\bin\Debug\2.GetVillainsNames.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\2.GetVillainsNames\obj\Debug\2.GetVillainsNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\2.GetVillainsNames\obj\Debug\2.GetVillainsNames.pdb

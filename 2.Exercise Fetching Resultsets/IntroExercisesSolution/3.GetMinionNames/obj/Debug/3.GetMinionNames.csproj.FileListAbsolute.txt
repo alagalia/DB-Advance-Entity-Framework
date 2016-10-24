@@ -1,0 +1,6 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\bin\Debug\3.GetMinionNames.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\bin\Debug\3.GetMinionNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\bin\Debug\3.GetMinionNames.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\obj\Debug\3.GetMinionNames.csprojResolveAssemblyReference.cache
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\obj\Debug\3.GetMinionNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\3.ADO.NET Advanced\IntroExercisesSolution\3.GetMinionNames\obj\Debug\3.GetMinionNames.pdb
