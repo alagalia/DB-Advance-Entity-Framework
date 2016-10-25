@@ -1,0 +1,6 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\bin\Debug\7.PrintAllMinionNames.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\bin\Debug\7.PrintAllMinionNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\bin\Debug\7.PrintAllMinionNames.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\obj\Debug\7.PrintAllMinionNames.csprojResolveAssemblyReference.cache
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\obj\Debug\7.PrintAllMinionNames.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\7.PrintAllMinionNames\obj\Debug\7.PrintAllMinionNames.pdb
