@@ -1,0 +1,6 @@
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\bin\Debug\5.ChangeTownNamesCasing.exe.config
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\bin\Debug\5.ChangeTownNamesCasing.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\bin\Debug\5.ChangeTownNamesCasing.pdb
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\obj\Debug\5.ChangeTownNamesCasing.csprojResolveAssemblyReference.cache
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\obj\Debug\5.ChangeTownNamesCasing.exe
+D:\SOFTUNI-C#\DB Advance Entity Framework\2.Exercise Fetching Resultsets\IntroExercisesSolution\5.ChangeTownNamesCasing\obj\Debug\5.ChangeTownNamesCasing.pdb
