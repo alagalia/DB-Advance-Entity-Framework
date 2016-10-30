@@ -142,17 +142,17 @@ namespace SetUpEntity
                 #endregion
                 #region 16.	Increase Salaries
 
-                //string[] deps = new[] {"Engineering", " Tool Design", "Marketing ", " Information Services"};
+                //string[] deps = new[] { "Engineering", " Tool Design", "Marketing ", " Information Services" };
                 //var emps =
-                //    context.Employees.Where(emp => emp.Department.Name == "Engineering" 
+                //    context.Employees.Where(emp => emp.Department.Name == "Engineering"
                 //                                || emp.Department.Name == "Tool Design"
                 //                                || emp.Department.Name == "Marketing"
                 //                                || emp.Department.Name == "Information Services");
                 //foreach (var employee in emps)
                 //{
-                //    employee.Salary += employee.Salary*(decimal)0.12;
+                //    employee.Salary += employee.Salary * (decimal)0.12;
                 //}
-                //foreach (var em  in emps)
+                //foreach (var em in emps)
                 //{
                 //    Console.WriteLine($"{em.FirstName} {em.LastName} (${em.Salary})");
                 //}
@@ -175,6 +175,16 @@ namespace SetUpEntity
                 //    context.Towns.Remove(townsForDel);
                 //}
                 //Console.WriteLine($"{addressesForRemove.Count()} address in {townName} was deleted");
+
+                #endregion
+
+                #region 18.	Find Employees by First Name starting with ‘SA’
+
+                var emps = context.Employees.Where(em => em.FirstName.StartsWith("SA"));
+                foreach (var emp in emps)
+                {
+                    Console.WriteLine($"{emp.FirstName} {emp.LastName} – {emp.JobTitle} - (${emp.Salary})");
+                }
 
                 #endregion
             }
