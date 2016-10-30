@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace SetUpEntity
 {
@@ -43,7 +44,7 @@ namespace SetUpEntity
                 //}
                 #endregion
 
-                #region 6.	Adding a New Address and Updating Employee
+                #region 6.Adding a New Address and Updating Employee
                 //Address vitoshka = new Address { AddressText = "Vitoshka 15", TownID = 4 };
                 //context.Addresses.Add(vitoshka);
                 //Employee nakov = context.Employees.FirstOrDefault(e => e.LastName == "Nakov");
@@ -61,7 +62,7 @@ namespace SetUpEntity
                 //}
                 #endregion
 
-                #region 7.	Delete Project by Id
+                #region 7.Delete Project by Id
                 //var wantedProject = context.Projects.Find(2);
                 //wantedProject.Employees.Clear();
                 //context.Projects.Remove(wantedProject);
@@ -73,7 +74,7 @@ namespace SetUpEntity
                 //}
                 #endregion
 
-                #region 8.Find employees in period
+                #region 8. Find employees in period
 
                 //CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InstalledUICulture;
                 //var wantedEmployees = context.Employees
@@ -89,7 +90,7 @@ namespace SetUpEntity
                 //}
                 #endregion
 
-                #region 9.	Addresses by town name 
+                #region 9.Addresses by town name 
                 //var wantedAddresses =
                 //    context.Addresses
                 //    .OrderByDescending(a => a.Employees.Count).ThenBy(a => a.Towns.Name)
@@ -99,22 +100,83 @@ namespace SetUpEntity
                 //    Console.WriteLine($"{address.AddressText}, {address.Towns.Name} - {address.Employees.Count} employees");
                 //}
                 #endregion
-                #region 10.	Employee with id 147 sorted by project names 
 
-                var wantedEmpl = context.Employees.FirstOrDefault(e => e.EmployeeID == 147);
-                if (wantedEmpl != null)
-                {
-                    Console.WriteLine($"{wantedEmpl.FirstName} {wantedEmpl.LastName} {wantedEmpl.JobTitle}");
-                    var projects = wantedEmpl.Projects.OrderBy(p => p.Name);
+                #region 10.Employee with id 147 sorted by project names 
+                //var wantedEmpl = context.Employees.FirstOrDefault(e => e.EmployeeID == 147);
+                //if (wantedEmpl != null)
+                //{
+                //    Console.WriteLine($"{wantedEmpl.FirstName} {wantedEmpl.LastName} {wantedEmpl.JobTitle}");
+                //    var projects = wantedEmpl.Projects.OrderBy(p => p.Name);
 
-                    foreach (var project in projects)
-                    {
-                        Console.WriteLine($"{project.Name}");
-                    }
-                }
+                //    foreach (var project in projects)
+                //    {
+                //        Console.WriteLine($"{project.Name}");
+                //    }
+                //}
+
+                #endregion
+                #region 11.Departments with more than 5 employees
+
+                //var deps = context.Departments.Where(d => d.Employees.Count > 5)
+                //    .OrderBy(d => d.Employees.Count);
+                //foreach (var department in deps)
+                //{
+                //    Console.WriteLine($"{department.Name} {department.Employee.FirstName}");
+                //    foreach (var employee in department.Employees)
+                //    {
+                //        Console.WriteLine($"{employee.FirstName} {employee.LastName} {employee.JobTitle}");
+                //    }
+                //}
+                #endregion
+
+                #region 15.Find Latest 10 Projects
+                //CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InstalledUICulture;
+                //var wantedProjs = context.Projects.OrderByDescending(p => p.StartDate).Take(10).OrderBy(p=>p.Name);
+
+
+                //foreach (var proj in wantedProjs)
+                //{
+                //    Console.WriteLine($"{proj.Name} {proj.Description} {proj.StartDate} {proj.EndDate}");
+                //}
+
+                #endregion
+                #region 16.	Increase Salaries
+
+                //string[] deps = new[] {"Engineering", " Tool Design", "Marketing ", " Information Services"};
+                //var emps =
+                //    context.Employees.Where(emp => emp.Department.Name == "Engineering" 
+                //                                || emp.Department.Name == "Tool Design"
+                //                                || emp.Department.Name == "Marketing"
+                //                                || emp.Department.Name == "Information Services");
+                //foreach (var employee in emps)
+                //{
+                //    employee.Salary += employee.Salary*(decimal)0.12;
+                //}
+                //foreach (var em  in emps)
+                //{
+                //    Console.WriteLine($"{em.FirstName} {em.LastName} (${em.Salary})");
+                //}
+                //context.SaveChanges();
 
                 #endregion
 
+                #region 17.	Remove Towns
+
+                //string townName = "Seattle";
+                //Towns townsForDel = context.Towns.FirstOrDefault(t => t.Name == townName);
+                //var addressesForRemove = context.Addresses.Where(a => a.Towns.Name == townsForDel.Name);
+                //foreach (var address in addressesForRemove)
+                //{
+                //    address.Employees.Clear();
+                //}
+                //if (townsForDel != null)
+                //{
+                //    townsForDel.Addresses.Clear();
+                //    context.Towns.Remove(townsForDel);
+                //}
+                //Console.WriteLine($"{addressesForRemove.Count()} address in {townName} was deleted");
+
+                #endregion
             }
         }
     }
