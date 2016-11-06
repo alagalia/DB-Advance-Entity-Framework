@@ -12,7 +12,7 @@ namespace BookShopSystem.Models
         Normal, Promo, Gold
     }
 
-    public class Class1
+    public class Book
     {
         [Key]
         public int Id { get; set; }
