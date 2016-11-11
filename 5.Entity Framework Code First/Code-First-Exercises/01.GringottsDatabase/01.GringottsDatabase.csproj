@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\WizardDeposit.cs" />
     <Compile Include="WizardMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

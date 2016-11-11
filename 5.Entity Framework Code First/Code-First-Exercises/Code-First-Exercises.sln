@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.GringottsDatabase", "01.GringottsDatabase\01.GringottsDatabase.csproj", "{A07BB855-8444-4E0B-B3A2-AC4C4FB083C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Create User", "02.Create User\02.Create User.csproj", "{12B1CA5D-2FEE-4DB1-8183-DE8DA318ACBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.HotelDatabase", "03.HotelDatabase\03.HotelDatabase.csproj", "{C3D9F433-5FE2-44F5-9646-F065C5A6B6BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A07BB855-8444-4E0B-B3A2-AC4C4FB083C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A07BB855-8444-4E0B-B3A2-AC4C4FB083C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A07BB855-8444-4E0B-B3A2-AC4C4FB083C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B1CA5D-2FEE-4DB1-8183-DE8DA318ACBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B1CA5D-2FEE-4DB1-8183-DE8DA318ACBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B1CA5D-2FEE-4DB1-8183-DE8DA318ACBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B1CA5D-2FEE-4DB1-8183-DE8DA318ACBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D9F433-5FE2-44F5-9646-F065C5A6B6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D9F433-5FE2-44F5-9646-F065C5A6B6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D9F433-5FE2-44F5-9646-F065C5A6B6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D9F433-5FE2-44F5-9646-F065C5A6B6BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
