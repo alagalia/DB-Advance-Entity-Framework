@@ -6,12 +6,10 @@ namespace StudentSystem.Models
 {
     public class Course
     {
-        public Course(string name, DateTime startDate, DateTime endDate, decimal price )
+        
+        public Course()
         {
-            this.Name = name;
-            this.StartDate = startDate;
-            this.EndtDate = endDate;
-            this.Price = price;
+            
             this.Students = new HashSet<Student>();
             this.Resources = new HashSet<Resource>();
             this.Homeworks = new HashSet<Homework>();

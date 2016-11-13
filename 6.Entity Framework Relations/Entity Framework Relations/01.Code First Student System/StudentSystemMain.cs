@@ -1,5 +1,11 @@
 ﻿
+using System;
+using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Data.Entity.Validation;
+using System.Linq;
 using StudentSystem.Data;
+using StudentSystem.Models;
 
 namespace StudentSystem.ConsoleClient
 {
@@ -9,6 +15,7 @@ namespace StudentSystem.ConsoleClient
         {
             StudentSystemContext context = new StudentSystemContext();
             context.Database.Initialize(true);
+
         }
     }
 }

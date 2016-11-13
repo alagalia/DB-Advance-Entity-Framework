@@ -5,6 +5,17 @@ namespace StudentSystem.Models
 {
     public class Resource
     {
+        public Resource()
+        {
+            
+        }
+       public Resource(string name, string typeOfResource, string url )
+        {
+            this.Name = name;
+            this.TypeOfResource = typeOfResource;
+            this.Url = url;
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -14,7 +25,7 @@ namespace StudentSystem.Models
         [Required, RegularExpression("video|presentation|document|other")]
         public string TypeOfResource { get; set; }
 
-        [Required]
+        [Required, RegularExpression(@"www\..+\.com|net|org|bg")]
         public string Url { get; set; }
 
         //public virtual int CourseId { get; set; }
