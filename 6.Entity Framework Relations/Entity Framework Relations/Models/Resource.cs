@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StudentSystem.Models
@@ -28,9 +29,8 @@ namespace StudentSystem.Models
         [Required, RegularExpression(@"www\..+\.com|net|org|bg")]
         public string Url { get; set; }
 
-        //public virtual int CourseId { get; set; }
+        public virtual Course Course { get; set; }  
 
-        //[ForeignKey("CourseId")]
-        public virtual Course Course { get; set; }
+        public virtual ICollection<License> Licenses { get; set; }
     }
 }

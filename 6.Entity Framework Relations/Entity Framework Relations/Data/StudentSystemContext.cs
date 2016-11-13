@@ -17,5 +17,6 @@ namespace StudentSystem.Data
         public virtual IDbSet<Resource> Resources { get; set; }
         public virtual IDbSet<Homework> Homeworks { get; set; }
         public virtual IDbSet<Course> Courses { get; set; }
+        public virtual IDbSet<License> Licenses { get; set; }
     }
 }
