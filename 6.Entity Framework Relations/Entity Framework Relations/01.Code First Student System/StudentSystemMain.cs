@@ -44,7 +44,24 @@ namespace StudentSystem.ConsoleClient
             //--------------------
             //3.List all courses with more than 5 resources.Order them by resources count(descending), then by start date (descending).Print only the course name and the resource count.
 
-           
+            //------------------------
+            //8.	Tag Attribute
+            //string input = Console.ReadLine();
+            //var tag = new Tag {Name = input};
+            //context.Tags.Add(tag);
+            //try
+            //{
+            //    context.SaveChanges();
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine($"{tag.Name} was added to database");
+            //}
+            //catch (Exception)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine($"{tag.Name} was NOT added to database");
+            //}
+            //Console.ForegroundColor = ConsoleColor.White ;
+
         }
     }
 }

@@ -8,6 +8,7 @@ namespace StudentSystem.Models
         {
             this.Pictures = new HashSet<Picture>();
             this.Tags = new HashSet<Tag>();
+            this.Students = new HashSet<Student>();
         }
 
         public int Id { get; set; }
@@ -20,7 +21,7 @@ namespace StudentSystem.Models
 
         public virtual ICollection<Picture> Pictures { get; set; }
 
-        public virtual Student Student { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
 
         public virtual ICollection<Tag> Tags { get; set; }
     }
