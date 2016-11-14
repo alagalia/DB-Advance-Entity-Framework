@@ -47,6 +47,7 @@ namespace StudentSystem.Data.Migrations
             //context.Resources.Add(rs);
             //context.Resources.Add(rs1);
         }
+
        
     }
 }

@@ -18,5 +18,14 @@ namespace StudentSystem.Data
         public virtual IDbSet<Homework> Homeworks { get; set; }
         public virtual IDbSet<Course> Courses { get; set; }
         public virtual IDbSet<License> Licenses { get; set; }
+        public virtual IDbSet<Picture> Pictures { get; set; }
+        public virtual IDbSet<Album> Albums { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //many to manu self relations
+            modelBuilder.Entity<Student>().HasMany(s => s.Students).WithMany();
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -10,6 +10,8 @@ namespace StudentSystem.Models
         {
             this.Courses = new HashSet<Course>();
             this.Homeworks = new HashSet<Homework>();
+            this.Students = new HashSet<Student>();
+            this.Albums =  new HashSet<Album>();
         }
 
         [Key]
@@ -28,5 +30,9 @@ namespace StudentSystem.Models
         public virtual ICollection<Course> Courses { get; set; }
 
         public virtual ICollection<Homework> Homeworks { get; set; }
+
+        public virtual ICollection<Student> Students { get; set; }
+
+        public virtual ICollection<Album> Albums { get; set; }
     }
 }
