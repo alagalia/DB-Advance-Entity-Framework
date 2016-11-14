@@ -20,6 +20,8 @@ namespace StudentSystem.Data
         public virtual IDbSet<License> Licenses { get; set; }
         public virtual IDbSet<Picture> Pictures { get; set; }
         public virtual IDbSet<Album> Albums { get; set; }
+        public virtual IDbSet<Tag> Tags { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

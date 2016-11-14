@@ -44,8 +44,7 @@ namespace StudentSystem.ConsoleClient
             //--------------------
             //3.List all courses with more than 5 resources.Order them by resources count(descending), then by start date (descending).Print only the course name and the resource count.
 
-            
-            
+           
         }
     }
 }

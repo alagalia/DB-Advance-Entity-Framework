@@ -46,8 +46,11 @@ namespace StudentSystem.Data.Migrations
             //context.Homeworks.Add(hm2);
             //context.Resources.Add(rs);
             //context.Resources.Add(rs1);
-        }
 
-       
+            //add tag with vallidaTOR
+            //Tag tg = new Tag {Name = "#ABigFunnyBirthDay1234567890abcdef"};
+            //context.Tags.Add(tg);
+
+        }
     }
 }

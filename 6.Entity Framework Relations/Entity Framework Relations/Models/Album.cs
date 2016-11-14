@@ -7,6 +7,7 @@ namespace StudentSystem.Models
         public Album()
         {
             this.Pictures = new HashSet<Picture>();
+            this.Tags = new HashSet<Tag>();
         }
 
         public int Id { get; set; }
@@ -20,5 +21,7 @@ namespace StudentSystem.Models
         public virtual ICollection<Picture> Pictures { get; set; }
 
         public virtual Student Student { get; set; }
+
+        public virtual ICollection<Tag> Tags { get; set; }
     }
 }
