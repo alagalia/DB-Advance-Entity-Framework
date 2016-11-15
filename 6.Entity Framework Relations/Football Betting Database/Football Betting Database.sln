@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballBettingDatabase.Client", "FootballBettingDatabase.Client\FootballBettingDatabase.Client.csproj", "{F8972BF6-4839-467D-86CD-9E48829D08E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballBettingdatabase.Database", "FootballBettingdatabase.Database\FootballBettingdatabase.Database.csproj", "{0412785C-7434-4F57-BB68-B12F6E01A113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballBettingDatabase.Models", "FootballBettingDatabase.Modelss\FootballBettingDatabase.Models.csproj", "{63C927D4-F041-4802-BF0A-ADCA78221C1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8972BF6-4839-467D-86CD-9E48829D08E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8972BF6-4839-467D-86CD-9E48829D08E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8972BF6-4839-467D-86CD-9E48829D08E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8972BF6-4839-467D-86CD-9E48829D08E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0412785C-7434-4F57-BB68-B12F6E01A113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0412785C-7434-4F57-BB68-B12F6E01A113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0412785C-7434-4F57-BB68-B12F6E01A113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0412785C-7434-4F57-BB68-B12F6E01A113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C927D4-F041-4802-BF0A-ADCA78221C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C927D4-F041-4802-BF0A-ADCA78221C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C927D4-F041-4802-BF0A-ADCA78221C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C927D4-F041-4802-BF0A-ADCA78221C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
