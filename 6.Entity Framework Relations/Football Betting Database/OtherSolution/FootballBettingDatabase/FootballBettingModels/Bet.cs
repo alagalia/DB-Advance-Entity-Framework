@@ -8,7 +8,6 @@ namespace FootballBettingModels
     {
         public Bet()
         {
-            this.BetGames = new HashSet<BetGame>();
         }
 
         public int Id { get; set; }

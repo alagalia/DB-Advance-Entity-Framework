@@ -16,6 +16,7 @@ namespace FootballBettingDatabase.Models
         public Game Game { get; set; }
 
         public virtual ResultPrediction ResultPrediction { get; set; }
+
          
     }
 }

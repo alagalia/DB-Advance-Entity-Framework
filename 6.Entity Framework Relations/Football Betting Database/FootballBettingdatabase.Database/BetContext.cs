@@ -30,6 +30,16 @@ namespace FootballBettingdatabase.Database
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //many to many
+            //modelBuilder.Entity<Country>()
+            //    .HasMany<Continent>(country => country.Continent)
+            //    .WithMany(continent => continent.Countries)
+            //    .Map(configuration =>
+            //    {
+            //        configuration.MapLeftKey("CountryId");
+            //        configuration.MapRightKey("ContinentId");
+            //        configuration.ToTable("CountryContinents");
+            //    });
             base.OnModelCreating(modelBuilder);
 
         }

@@ -1,11 +1,16 @@
 ﻿
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FootballBettingDatabase.Models
 {
     public class Team
     {
+        public Team()
+        {
+            this.Players = new HashSet<Player>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -13,15 +18,20 @@ namespace FootballBettingDatabase.Models
 
         public byte[] Logo { get; set; }
 
-        [StringLength(3)]
+        [MaxLength(3)]
         public string Initials { get; set; }
 
+        public decimal Budget { get; set; }
+
+        [Required]
         public virtual Color PrimaryKitColor { get; set; }
 
         public virtual Color SecondKitColor { get; set; }
 
+        [Required]
         public virtual Town Town { get; set; }
 
-        public decimal Budget { get; set; } 
+        public virtual ICollection<Player> Players { get; set; }
+
     }
 }
