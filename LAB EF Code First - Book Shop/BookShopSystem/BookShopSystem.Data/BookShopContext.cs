@@ -12,6 +12,20 @@ namespace BookShopSystem.Data
             
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //one-to-many self-relationship
+            modelBuilder.Entity<Book>()
+                .HasMany(b => b.RelatedBooks)
+                .WithMany()
+                .Map(m =>
+                {
+                    m.MapLeftKey("BookId");
+                    m.MapRightKey("RelatedBooksId");
+                    m.ToTable("BookRelatedBooks");
+                });
+            base.OnModelCreating(modelBuilder);
+        }
 
         public IDbSet<Book> Books { get; set; }
 

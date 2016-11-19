@@ -1,13 +1,7 @@
 ﻿
 using System;
-using System.Data.Entity;
-using System.Data.Entity.Migrations;
-using System.Globalization;
-using System.IO;
 using System.Linq;
 using BookShopSystem.Data;
-using BookShopSystem.Models;
-using EntityFramework.Extensions;
 
 namespace BookShopSystem.ConsoleClient
 {
@@ -18,7 +12,7 @@ namespace BookShopSystem.ConsoleClient
             //var migrationStrategy = new DropCreateDatabaseIfModelChanges<BookShopContext>();
             //Database.SetInitializer(migrationStrategy);
             var context = new BookShopContext();
-
+            context.Database.Initialize(true);
             //1. get all books after the year 2000.Print only their titles.
             //GetBookAfter2000(context);
 
@@ -32,7 +26,30 @@ namespace BookShopSystem.ConsoleClient
             //GetBooksByGivenAuthorOrderBy(context);
 
             //5.  * *Get the most recent books by categories. The categories should be ordered by total book count.Only take the top 3 most recent books from each category -ordered by date (descending), then by title(ascending).Select the category name, total book count and for each book -its title and release date.
-             //GetFirst3BookGroupByCategoryOrderByBookCount(context);
+            //GetFirst3BookGroupByCategoryOrderByBookCount(context);
+
+
+            //// Query the first three books to get their names and their related book names
+            //GetRelatedBooksTitleFirst3(context);
+        }
+
+        private static void GetRelatedBooksTitleFirst3(BookShopContext context)
+        {
+            var booksFromQuery = context.Books.Take(3).Select(b => new
+            {
+                b.Title,
+                relatedBooks = b.RelatedBooks.Select(relBookk => relBookk.Title)
+            });
+
+
+            foreach (var book in booksFromQuery)
+            {
+                Console.WriteLine("--{0}", book.Title);
+                foreach (var relatedBook in book.relatedBooks)
+                {
+                    Console.WriteLine(relatedBook);
+                }
+            }
         }
 
         private static void GetFirst3BookGroupByCategoryOrderByBookCount(BookShopContext context)

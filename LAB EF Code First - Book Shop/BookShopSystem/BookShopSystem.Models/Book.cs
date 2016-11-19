@@ -23,6 +23,7 @@ namespace BookShopSystem.Models
         public Book()
         {
             this.categories = new List<Category>();
+            this.RelatedBooks = new List<Book>();
         }
 
         [Key]
@@ -51,6 +52,8 @@ namespace BookShopSystem.Models
         public virtual Author Author { get; set; }
 
         public AgeRestriction AgeRestriction { get; set; }
+
+        public virtual ICollection<Book> RelatedBooks { get; set; }
 
         public virtual ICollection<Category> Categories
         {

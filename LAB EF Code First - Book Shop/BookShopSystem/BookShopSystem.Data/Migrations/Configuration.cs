@@ -19,7 +19,6 @@ namespace BookShopSystem.Data.Migrations
         protected override void Seed(BookShopSystem.Data.BookShopContext context)
         {
         }
-
         private void AddCategoriesToBooks(BookShopContext context)
         {
             var categories = context.Categories.ToList();
