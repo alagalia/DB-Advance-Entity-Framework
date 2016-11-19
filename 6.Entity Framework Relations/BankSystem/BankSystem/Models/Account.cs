@@ -18,5 +18,7 @@ namespace BankSystem.Models
         {
             Balance -= money;
         }
+
+        public virtual User User{ get; set; }
     }
 }
