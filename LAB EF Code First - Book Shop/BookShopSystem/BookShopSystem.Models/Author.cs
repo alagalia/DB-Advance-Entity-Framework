@@ -19,7 +19,7 @@ namespace BookShopSystem.Models
 
         public string FirstName { get; set; }
 
-        [Required]
+        [Required, MinLength(3)]
         public string LastName { get; set; }
 
         public virtual ICollection<Book> Books

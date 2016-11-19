@@ -9,8 +9,9 @@ namespace BookShopSystem.Data
         public BookShopContext()
             : base("name=BookShopContext")
         {
+            
         }
-        
+
 
         public IDbSet<Book> Books { get; set; }
 

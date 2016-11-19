@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{943689DA-BD6F-420F-8E4C-33CDC7D407E7}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{8F64D476-61CA-4D66-8B43-5DF5D747E06E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BookShopSystem.Data</RootNamespace>
-    <AssemblyName>BookShopSystem.Data</AssemblyName>
+    <RootNamespace>BookShopSystem.ConsoleClient</RootNamespace>
+    <AssemblyName>BookShopSystem.ConsoleClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -45,8 +48,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,8 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookShopContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="BookShopMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BookShopSystem.Data\BookShopSystem.Data.csproj">
+      <Project>{943689da-bd6f-420f-8e4c-33cdc7d407e7}</Project>
+      <Name>BookShopSystem.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BookShopSystem.Models\BookShopSystem.Models.csproj">
       <Project>{a77f132e-518a-44a9-9830-589fde8b2563}</Project>
       <Name>BookShopSystem.Models</Name>
