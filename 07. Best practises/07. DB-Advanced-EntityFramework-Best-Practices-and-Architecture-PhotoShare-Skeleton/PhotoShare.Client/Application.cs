@@ -1,7 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.Validation;
+using System.IO;
 using PhotoShare.Data.Intefaces;
+using PhotoShare.Models;
 
 namespace PhotoShare.Client
 {
@@ -15,10 +17,7 @@ namespace PhotoShare.Client
         static void Main()
         {
             IUnitOfWork unitOfWork = new UnitOfWork();
-            //var user = unitOfWork.Users.FirstOrDefaultWhere(u => u.Username == "pesho1");
 
-            //unitOfWork.Users.Delete(user);
-            //unitOfWork.Save();
             ICommandDispatcher commandDispatcher = new CommandDispatcher(unitOfWork);
             IReader reader = new ConsoleReader();
             IWriter writer = new ConsoleWriter();
@@ -38,6 +37,8 @@ namespace PhotoShare.Client
                 }
                 throw;
             }
+
+
         }
     }
 }

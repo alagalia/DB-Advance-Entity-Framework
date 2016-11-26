@@ -24,17 +24,17 @@ namespace PhotoShare.Client.Core.Commands
 
             string property = Data[2];
             string value = Data[3];
-            switch (property)
+            switch (property.ToLower())
             {
-                case "Name":
+                case "name":
                     album.Name = value;
                     resultOfTheOperation = $"Name of the album was updated to {value}";
                     break;
-                case "BackgroundColor":
+                case "backgroundColor":
                     album.BackgroundColor = (Color?) Enum.Parse(typeof (Color), value);
                     resultOfTheOperation = $"Color of the album was updated in database to {value}";
                     break;
-                case "IsPublic":
+                case "isPublic":
                     album.IsPublic = bool.Parse(value);
                     resultOfTheOperation = $"Album`s status 'IsPublic' was updated to {value}";
                     break;

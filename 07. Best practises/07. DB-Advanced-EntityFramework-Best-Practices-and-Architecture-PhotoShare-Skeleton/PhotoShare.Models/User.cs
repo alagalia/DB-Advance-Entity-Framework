@@ -52,14 +52,18 @@
         }
 
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
 
         [NotMapped]
         public string FullName => $"{this.FirstName} {this.LastName}";
 
         public virtual Town BornTown { get; set; }
+
         public virtual Town CurrentTown { get; set; }
+
         public DateTime? RegisteredOn { get; set; }
+
         public DateTime? LastTimeLoggedIn { get; set; }
 
         [Age]

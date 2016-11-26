@@ -38,7 +38,44 @@ namespace PhotoShare.Client.Core.Commands
         //!!! Cannot change username
         public override string Execute()
         {
-            throw new NotImplementedException();
+            string resultOfTheOperation = string.Empty;
+            string userName = Data[1];
+            User user = unit.Users.FirstOrDefaultWhere(u => u.Username == userName);
+
+            string property = Data[2];
+            string value = Data[3];
+            switch (property.ToLower())
+            {
+                case "password":
+                    user.Password = value;
+                    resultOfTheOperation = $"Password of the user was updated to {value}";
+                    break;
+                case "email":
+                    user.Email = value;
+                    resultOfTheOperation = $"Email of the user was updated in database to {value}";
+                    break;
+                case "firstName":
+                    user.FirstName = value;
+                    resultOfTheOperation = $"User`s first name was updated to {value}";
+                    break;
+                case "lastName":
+                    user.LastName = value;
+                    resultOfTheOperation = $"User`s last name  was updated to {value}";
+                    break;
+                case "bornTown":
+                    Town bornTown = unit.Towns.FirstOrDefaultWhere(t => t.Name == value) ?? new Town() {Name = value};
+                    user.BornTown = bornTown;
+                    resultOfTheOperation = $"Born town was updated to {value}";
+                    break;
+                case "currentTown":
+                    Town currentTown = unit.Towns.FirstOrDefaultWhere(t => t.Name == value) ?? new Town() { Name = value };
+                    user.CurrentTown = currentTown;
+                    resultOfTheOperation = $"Born town was updated to {value}";
+                    break;
+            }
+
+            unit.Save();
+            return resultOfTheOperation;
         }
     }
 }
