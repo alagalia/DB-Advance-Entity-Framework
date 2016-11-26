@@ -62,6 +62,10 @@
       <Project>{b8640cc9-c381-425a-ad03-4b1164704ff4}</Project>
       <Name>PhotoShare.Client</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PhotoShare.Data\PhotoShare.Data.csproj">
+      <Project>{34D41B8F-FE76-4A31-9EC4-9B010988C00D}</Project>
+      <Name>PhotoShare.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PhotoShare.Models\PhotoShare.Models.csproj">
       <Project>{1f36af83-9c71-4a06-9345-2e1f9350ec6d}</Project>
       <Name>PhotoShare.Models</Name>
