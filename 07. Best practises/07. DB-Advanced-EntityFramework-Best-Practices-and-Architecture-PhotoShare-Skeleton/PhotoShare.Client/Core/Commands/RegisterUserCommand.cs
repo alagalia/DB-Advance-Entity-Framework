@@ -8,21 +8,7 @@ namespace PhotoShare.Client.Core.Commands
 {
     public class RegisterUserCommand : Command
     {
-        [Inject]
-        private PhotoShareContext context;
-        [Inject]
-        private DbSet<User> users;
-        [Inject]
-        private DbSet<Album> albums;
-        [Inject]
-        private DbSet<Picture> pictures;
-        [Inject]
-        private DbSet<Tag> tags;
-        [Inject]
-        private DbSet<AlbumRole> albumRoles;
-        [Inject]
-        private DbSet<Town> towns;
-
+       
         public RegisterUserCommand(string[] data) : base(data)
         {
         }
@@ -34,7 +20,7 @@ namespace PhotoShare.Client.Core.Commands
             string password = Data[2];
             string repeatPassword = Data[3];
             string email = Data[4];
-            if(password == repeatPassword)
+            if(password != repeatPassword)
             {
                 throw new InvalidOperationException("Passwords does not match");
             }
@@ -49,8 +35,8 @@ namespace PhotoShare.Client.Core.Commands
                 LastTimeLoggedIn = DateTime.Now
             };
 
-            this.users.Add(user);
-            this.context.SaveChanges();
+            unit.Users.Add(user);
+            unit.Save();
             return "User "+user.Username+" was registered sucesfully";
         }
     }

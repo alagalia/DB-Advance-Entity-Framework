@@ -54,20 +54,20 @@ namespace PhotoShare.Client.Core.Commands
                     user.Email = value;
                     resultOfTheOperation = $"Email of the user was updated in database to {value}";
                     break;
-                case "firstName":
+                case "firstname":
                     user.FirstName = value;
                     resultOfTheOperation = $"User`s first name was updated to {value}";
                     break;
-                case "lastName":
+                case "lastname":
                     user.LastName = value;
                     resultOfTheOperation = $"User`s last name  was updated to {value}";
                     break;
-                case "bornTown":
+                case "borntown":
                     Town bornTown = unit.Towns.FirstOrDefaultWhere(t => t.Name == value) ?? new Town() {Name = value};
                     user.BornTown = bornTown;
                     resultOfTheOperation = $"Born town was updated to {value}";
                     break;
-                case "currentTown":
+                case "currenttown":
                     Town currentTown = unit.Towns.FirstOrDefaultWhere(t => t.Name == value) ?? new Town() { Name = value };
                     user.CurrentTown = currentTown;
                     resultOfTheOperation = $"Born town was updated to {value}";
